@@ -1,0 +1,337 @@
+/*[RESET]*/
+*{ 
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    
+    
+    
+}
+/*[Header TOPO/LOGO/SOCIAL]*/
+.header-topo{
+    background-color: #252323;
+    height: 4rem;
+    width: 100%;
+}
+.header-logo{
+    left: 16.5rem;
+    position: relative;
+    top: 20px;
+    width: 70%;
+}
+.header-social{
+    position: relative;
+    left: 90rem;
+    width: 20%;
+}
+
+.header-social img{
+    padding-left: 15px; 
+}
+.header-social a{
+    text-decoration: none;
+}
+/*[Menu Header/Input]*/
+.menu-header{
+    position: relative;
+    height: 81px;
+    background-color:#ffffff;
+    border-bottom: 5px solid #efefef;
+    padding-bottom: 1.15em
+}
+
+.bottom-menu{
+    position: relative;
+    left: 16.5rem;
+    max-width: 980px;
+    font-size: 25px;
+    top: 1.8rem;  
+}
+.bottom-menu a{
+    text-decoration: none;
+    color: #a6a6a6;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+.bottom-menu a:hover{
+    color: #00bac6;
+    border-bottom: 5px solid #00bac6;
+    padding-bottom: 0.73em
+}
+.input-search{
+    color: #a6a6a6;
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 25px;
+    left: 74rem;
+    height: 35px;
+    width: 18%;
+    border: 2px solid #b5b5b5;
+    outline: none;    
+}
+.input-search:hover{
+    border: 2px solid #00bac6;
+}
+.bottom-menu img{
+    position: absolute;
+    left: 83rem;
+    top: 6px; 
+}
+/*[Conteudo Sliders]*/
+.slider-banner{
+   margin: 0 auto;
+   width: 1366px;
+   height: 613px;
+   overflow: hidden;
+}
+.slider-radio{
+    width: 400%;
+    height: 613px;
+    display: flex;
+}
+.slider-radio input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 1366px;
+}
+/*[Personalizaçao Navigation (Buttons)*/
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    padding-left: 600px;
+}
+.manual-btn{
+    border: 2px solid #ffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0,8s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 60px;
+}
+.manual-btn:hover{
+    background-color: #ffff;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left:-25%;
+}
+#radio3:checked ~.first{
+    margin-left:-50%;
+}
+#radio4:checked ~.first{
+    margin-left:-75%;
+}
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0,8;
+}
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 573px;
+    display: flex;
+    justify-content: center;
+    padding-left: 599px;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 60px;
+}
+#radio1:checked~ .navigation-auto .auto-btn1{
+    background-color: #ffff;
+}
+#radio2:checked~ .navigation-auto .auto-btn2{
+    background-color: #ffff;
+}
+#radio3:checked~ .navigation-auto .auto-btn3{
+    background-color: #ffff;
+}
+#radio4:checked~ .navigation-auto .auto-btn4{
+    background-color: #ffff;
+}
+/*[Fim Personalizaçao Navigation (Buttons)*/
+
+/*[Inicio Section Main Information]*/
+.main-section{
+    background-color: #ffff;
+    height: 40em;
+    width: 100%;
+    margin-top: 4em;
+}
+.main-section::before{
+    width: 99%;
+    position: absolute;
+    content: '';
+    height: 51px;
+    background-image: url(../imagens/seta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 37em;
+    
+}
+
+.section-information h1{
+    text-align: center;
+    color: #818181;
+    font-size: 30px;
+}
+.section-information p{
+    text-align: center;
+    color: #a2a2a2;
+    font-size: 15px;
+}
+.main-information{
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 16em;
+    max-width: 1500px;
+}
+.container-information{
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #818181;
+    
+}
+.container-information:nth-child(2){
+    margin-top: 4em;
+    
+}
+/*[Fim Sections Anuncios]*/
+
+/*[Inicio Sections Anuncios]*/
+.main-anuncios{
+    background-color: #eeee;
+    height: 60em;
+    padding-left: 200px;
+    width: 100%;   
+}
+.main-anuncios4{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 120px;    
+}
+.container-anuncios{
+    width: 24%;
+    margin-left: 30px;
+    border: 2px solid #c5c5c5;
+    margin-top: 30px; 
+}
+.container-anuncios img{
+    width: 100%;
+}
+.container-anuncios h3{
+    color: #797878;
+}
+.container-anuncios p{
+    color: #818181;
+}
+
+/*[Inicio Footer Sections]*/
+.footer-section{
+    width: 100%;
+    display: flex;
+    height: 13em;
+}
+.footer-imagens{
+    position: relative;
+    left: 15em;
+    margin-top: 5em;
+    margin-left: 6.3em;
+    margin-right: 5em;
+}
+.footer-imagens img{
+    width: 100%;
+}
+.footer-imagens:nth-child(3){
+    margin-top:6em;
+}
+.footer-imagens:nth-child(4){
+    margin-top: 4em;
+}
+/*[Fim Footer Sections]*/
+
+/*[Inicio Footer Text]*/
+.footer-final{
+    background-color: #53534d;
+    display: flex;
+    width: 100%;
+    height: 28em;
+}
+.footer-text{
+    position: relative;
+    width: 18%;
+    left: 19em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 2em;
+    color:#c0c0c0 ;
+}
+.footer-text span{
+    margin-left: 10px; 
+}
+.clock-span{
+    padding-bottom: 2em;
+    border-bottom: 2px solid #5c5c5c;
+}
+.footer-text h3{
+    color: #ffff;
+    font-size: 22px;
+}
+.footer-text p{
+    font-size: 14px;
+}
+.footer-text img{
+    margin-top: 10px;
+}
+.clock-imagem{
+    margin-top: 1px!important
+}
+/*[Fim Footer Text]*/
+
+/*[Inicio Footer End]*/
+.end{
+    width: 100%;
+    background-color: #252323;
+    height: 100px;
+    display: flex;
+    position: relative;
+}
+.end ul li{
+    display: inline-flex;
+    position: relative;
+    left: 65em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+.end p{
+    position: relative;
+    left: 23em;
+    margin-top: 2em;
+    color: #c1c1c1;
+    font-size: 14px;
+}
+/*[Fim Footer End]*/
