@@ -4,9 +4,6 @@
     border: 0;
     box-sizing: border-box;
     font-family: 'VT323', monospace;
-    
-    
-    
 }
 /*[Header TOPO/LOGO/SOCIAL]*/
 .header-topo{
@@ -183,7 +180,6 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 37em;
-    
 }
 
 .section-information h1{
@@ -335,3 +331,141 @@
     font-size: 14px;
 }
 /*[Fim Footer End]*/
+
+@media all and (max-width:1668px) {
+    .header-logo {
+    left: 10.5rem;
+    position: relative;
+    top: 20px;
+    width: 70%;
+    }
+    .header-social{
+        position: relative;
+        left: 70rem;
+        width: 20%;
+    }
+    .menu-header{
+        padding-bottom: 1em
+    }
+    .bottom-menu{
+        left: 10.5rem;
+        font-size: 20px;
+        top: 1.8rem;  
+    }
+    .input-search{
+        padding-left: 10px;
+        padding-right: 25px;
+        left: 60rem;
+        height: 25px;
+        width: 18%;
+    }
+    .bottom-menu img{
+        position: absolute;
+        left: 69rem;
+        top: 6px; 
+    }
+    .section-information h1{
+        font-size: 25px;
+    }
+    .section-information p {
+        font-size: 12px;
+    }
+    .main-information{
+        width: 100%;
+        margin-top: 80px;
+        margin-left: 12em;
+        max-width: 1400px;
+    }
+    .container-information{
+        width: 25%;
+    }
+    .main-anuncios{
+        height: 50em;
+    }
+    .main-anuncios4{
+        width: 90%;
+        padding-top: 40px;
+        padding-left: 100px; 
+    }
+    .main-section::before{
+        width: 95%;
+        position: absolute;
+        content: '';
+        height: 51px;
+        background-image: url(../imagens/seta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 37em;
+    }
+    .footer-imagens{
+        position: relative;
+        left: 10em;
+        margin-top: 5em;
+        margin-left: 4.3em;
+        margin-right: 5em;
+    }
+    .end ul li{
+        display: inline-flex;
+        position: relative;
+        left: 55em;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }
+}
+@media all and (max-width:1500px){
+    .menu-header{
+        position: relative;
+        height: 81px;
+        background-color:#ffffff;
+        border-bottom: 3px solid #efefef;
+        padding-bottom: 1.2em
+    }
+    .bottom-menu a:hover{
+        color: #00bac6;
+        border-bottom: 3px solid #00bac6;
+        padding-bottom: 1.3em
+    }
+    .input-search:hover{
+        border: 1.5px solid #00bac6;
+    }
+    .end ul li{
+        display: inline-flex;
+        position: relative;
+        left: 45em;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }
+    .footer-section{
+        height: 10em;
+    }
+    .footer-imagens{
+        position: relative;
+        left: 7em;
+        margin-top: 3em;
+        margin-left: 3.3em;
+        margin-right: 4em;
+    }
+    .footer-imagens:nth-child(3){
+        margin-top:4.5em;
+    }
+    .footer-imagens:nth-child(4){
+        margin-top: 2.8em;
+    }
+
+    .end p{
+        left: 15em;
+        margin-top: 2em;
+        font-size: 12px;
+    }
+    .footer-text{
+        position: relative;
+        width: 18%;
+        left: 11em;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: 1em;
+        color:#c0c0c0 ;
+    }
+    
+    
+}
