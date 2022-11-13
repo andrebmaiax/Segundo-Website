@@ -1,9 +1,10 @@
 /*[RESET]*/
 *{ 
-    padding: 0 ;
-    border: 0 ;
+    padding:0;
+    border: 0;
     box-sizing: border-box;
     font-family: 'VT323', monospace;
+    
 }
 /*[Header TOPO/LOGO/SOCIAL]*/
 .header-topo{
@@ -418,6 +419,9 @@
         left: 18em;
         padding-top: 1.2em;
     }
+    body{
+        overflow-x: hidden;
+    }
 }
 
 /* TELA MAX WIDH 1500PX*/
@@ -462,7 +466,11 @@
         padding-right: 1em;
         margin-top: 1em;
     }
+    body{
+        overflow-x: hidden;
+    }
 }
+
     /*TELA MAX WIDH 1350PX*/
     @media all and (max-width:1350px){
         .menu-header{
@@ -552,6 +560,102 @@
             padding-left: 0.3em;
             padding-right: 0.3em;
         }
+        body{
+            overflow-x: hidden;
+        }
     }
-    
 
+    /*TELA MAX WIDH 1180PX*/
+    @media all and (max-width:1180px){
+        .header-logo {
+            left: 9rem;
+         }
+         .header-social{
+            left: 50rem;
+         }
+         .bottom-menu{
+            left: 8.5rem;
+            font-size: 20px;
+            top: 1.8rem;  
+        }
+        .input-search{
+            padding-left: 10px;
+            padding-right: 25px;
+            left: 42rem;
+            height: 25px;
+            width: 18%;
+        }
+        .bottom-menu img{
+            left: 51.5rem;
+            top: 6px; 
+        }
+        .footer-imagens{
+            left: 6.5em;
+           width: 12%;
+        }
+        .footer-text{
+            width: 16%;
+            left: 15em;
+            font-size: 10px;
+            margin-right: 0.5em;
+            margin-left: 0.5em;
+        }
+        .end ul li{
+            left: 29em;
+            padding-left: 0.3em;
+            padding-right: 0.3em;
+        }  
+    }
+    /*TELA MAX WIDH 1180PX*/
+    @media all and (max-width:1010px){
+        .header-social{
+            left: 43rem;    
+         } 
+         .bottom-menu{
+            left: 8.5rem;
+            font-size: 20px;
+            top: 1.8rem;  
+        } 
+         .input-search{
+            left: 35rem;
+            height: 24px;
+            width: 18%;
+        }
+        .bottom-menu img{
+            left: 44.5rem;
+            top: 5px; 
+        }
+        .bottom-menu a{
+            padding-left: 0.2rem;
+            padding-right: 0.2rem;
+        }
+        .main-section::before{
+            height: 48px;
+            width: 95%;
+        }
+        .section-information h1{
+            font-size: 20px;
+        }
+        .section-information p {
+            font-size: 10px;
+        }
+        .main-information{
+            width: 100%;
+            margin-top: 60px;
+            margin-left: 6.5em;
+        }
+        .container-information{
+            width: 25%;
+            font-size: 13px;
+        }
+     
+        .end ul li{
+            left: 23em;
+            padding-left: 0.3em;
+            padding-right: 0.3em;
+        }
+        .footer-final{
+            height: 35em;
+        }
+         
+    }
